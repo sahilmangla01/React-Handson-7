@@ -88,7 +88,7 @@ input:focus~.span1{
         align-items: center;
         flex-direction: column;
     }
-    .form > input{
+    .display > input{
         width: 80vw;
         
         margin-top: 5vh;
@@ -99,10 +99,21 @@ input:focus~.span1{
     .btn{
         width:40vw;
     }
+    .span2{
+        top: 4vh;
+    }
+    span{
+        top: 7vh;
+    }
+    input:focus~.span1{
+        top: 3.5vh;
+        
+        
+     }
   
   }
   @media only screen and (min-width:700px) and (max-width:920px){
-    .form > input{
+    .display > input{
         width: 40vw;
         
         margin-top: 5vh;
@@ -113,4 +124,15 @@ input:focus~.span1{
     .btn{
         width:25vw;
     }
+    .span2{
+        top: 4vh;
+    }
+    span{
+        top: 6vh;
+    }
+    input:focus~.span1{
+        top: 4vh;
+        
+        
+     }
   }
