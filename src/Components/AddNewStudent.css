@@ -15,10 +15,10 @@
     
 }
 
-.form > input{
+.display > input{
     margin-top: 10vh;
     font-size: 1.5em;
-    padding: 10px 10px;
+    padding: 15px 10px 10px;
     width: 30vw;
     background-color: transparent;
     border-radius: 4px;
@@ -45,7 +45,42 @@
     background-color: gray;
     margin-right: 30px;
 }
+.display{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+}
+span{
+    font-size: 1.5em;
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    transition: 0.5s;
+}
 
+input:focus~.span1{
+   top: 62px;
+   left: 20px;
+   width: 80px;
+   font-size: 1.2em;
+   color: #1D5B79;
+   text-align: center;
+   border-left: 4px solid #1D5B79;
+   border-right: 4px solid #1D5B79;
+   background-color: #F4F2DE;
+}
+.span2{
+    top: 62px;
+    left: 20px;
+    width: 80px;
+    font-size: 1.2em;
+    color: #1D5B79;
+    text-align: center;
+    border-left: 4px solid #1D5B79;
+    border-right: 4px solid #1D5B79;
+    background-color: #F4F2DE;
+ }
 
 
 @media only screen and (min-width:350px) and (max-width:550px){
@@ -64,6 +99,7 @@
     .btn{
         width:40vw;
     }
+  
   }
   @media only screen and (min-width:700px) and (max-width:920px){
     .form > input{

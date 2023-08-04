@@ -29,18 +29,28 @@ const AddNewStudent = () => {
             <form  >            
                 
                 <div className="form">
-                <input type="text"  value={Name} placeholder="Name" onChange={(e)=>setName(e.target.value)} autoComplete="off"/>
-            
-   
-                <input type="number"  value={Age} placeholder="Age"  onChange={(e)=>setAge(e.target.value)} autoComplete="off"/>
+                
+                <div className='display '>
+                <input type="text"  value={Name}  onChange={(e)=>setName(e.target.value)} autoComplete="off"/>
+                <span className='span1'>Name</span>
                 </div>
+   
+                <div className='display'>
+                <input type="number"  value={Age}  onChange={(e)=>setAge(e.target.value)} autoComplete="off"/>
+                <span className='span1'>Age</span>
+                </div></div>
+
 
                 <div className="form">
-                   
-                <input type="text" value={Course} placeholder="Course" onChange={(e)=>setCourse(e.target.value)} autoComplete="off" />
-
-                <input type="text"  value={Batch} placeholder="Batch" onChange={(e)=>setBatch(e.target.value)} autoComplete="off" />
+                  <div className='display'> 
+                <input type="text" value={Course}  onChange={(e)=>setCourse(e.target.value)} autoComplete="off" />
+                <span className='span1'>Course</span>
                 </div>
+
+                <div className='display'>
+                <input type="text"  value={Batch}  onChange={(e)=>setBatch(e.target.value)} autoComplete="off" />
+                <span className='span1'>Batch</span>
+                </div></div>
 
                 <div className="buttons">
                 <button  className="btn cancel__btn" type="button" onClick={()=>Navi('/student')}>Cancel</button>
